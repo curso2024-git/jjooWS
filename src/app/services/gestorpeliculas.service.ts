@@ -13,8 +13,12 @@ export class GestorpeliculasService {
       'Content-Type': 'application/json',
     })
   };
-  static URL: string = "https://test2prueba.free.beeceptor.com";
-  static PATH = "/todos";
+  // Referencia
+  //static URL: string = "https://test2prueba.free.beeceptor.com";
+  //static PATH = "/todos";
+
+  static URL: string = "https://github.com/curso2024-git/curso2024-git.github.io";
+  static PATH = "/dataPelis";
 
   peliculas: Pelicula[] = [];
 
