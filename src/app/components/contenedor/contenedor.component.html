@@ -1,3 +1,7 @@
 <div id="contenedor">
-    <app-pelicula *ngFor="let peli of gestorPeliculas.peliculas" [pelicula]=peli></app-pelicula>
+    <!-- <app-pelicula *ngFor="let peli of gestorPeliculas.peliculas" [pelicula]=peli></app-pelicula> -->
+    <!-- Modifico para filtro -->
+    <input id="filtro" type="text" placeholder="Filtro" [(ngModel)]="filtro" (keyup)="buscar()">
+    <app-pelicula *ngFor="let peli of peliculasFiltradas" [pelicula]=peli></app-pelicula>
+
 </div>
